@@ -1,0 +1,10 @@
+.welcome-img {
+  height: 90px;
+  background-image: url("https://i.ibb.co/Qky7Bp3/5f72e8eaf1e5-new-year-banner-1920x80.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.backgroundHome {
+  background: rgb(126, 165, 139);
+}

@@ -1,0 +1,37 @@
+.login-form {
+  text-align: center;
+  margin: 5% 0;
+  background: aliceblue;
+}
+.login-form h1 {
+  font-weight: bold;
+  color: #3e992c;
+}
+.input-field {
+  height: 2.5rem;
+  background-color: lightgrey;
+  border: none;
+  margin: 10px 20px;
+  width: 18rem;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+.input-field:focus {
+  outline: 0;
+}
+.submit-btn {
+  color: #fff;
+  background-color: rgb(248, 63, 63);
+  border: none;
+  height: 2.5rem;
+  margin: 10px 20px;
+  width: 18rem;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+.submit-btn:focus {
+  border-color: #f83f3f;
+  background-color: rgba(255, 0, 21, 0.836);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 21, 0.836);
+}

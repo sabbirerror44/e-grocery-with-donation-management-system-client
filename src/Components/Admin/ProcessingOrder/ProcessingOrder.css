@@ -1,0 +1,53 @@
+.orderDesign {
+  border: 1px solid maroon;
+}
+.page {
+  margin: 10px 50px;
+}
+
+.clientInfo {
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 510px;
+  background: #f3f3f3;
+}
+p.text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 7px;
+  letter-spacing: 0.2px;
+}
+.buttonDesign {
+  height: 33px;
+  width: 30%;
+  border-radius: 15px;
+  background: #399713;
+  border: none;
+  color: white;
+}
+.buttonDesign:hover {
+  background: #225c0b;
+}
+.buttonDesignDel {
+  height: 33px;
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+  background: #d62727;
+  color: white;
+}
+.buttonDesignDel:hover {
+  background: #9b1b1b;
+}
+.commonBorder {
+  background: brown;
+  height: 4px;
+  width: 450px;
+  margin-left: 35px;
+}
+.priceStyle {
+  min-width: 500px;
+  height: 45px;
+  text-align: center;
+}

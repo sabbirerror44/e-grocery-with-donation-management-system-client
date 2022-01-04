@@ -1,0 +1,10 @@
+.query-box {
+  width: 800px;
+  border: 2px solid rgb(58, 181, 219);
+  border-radius: 10px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+}
+/* .query-box textarea {
+  outline: 1px solid rgb(58, 219, 219);
+} */

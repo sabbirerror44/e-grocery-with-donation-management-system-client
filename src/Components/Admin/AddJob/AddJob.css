@@ -1,0 +1,14 @@
+.job-post-form {
+  width: 100%;
+  margin: auto;
+  padding: 0px 80px;
+  background: beige;
+  margin-bottom: 30px;
+}
+
+.titleStyle {
+  color: maroon;
+  font-family: "roboto";
+  font-weight: 700;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.productImg {
+  height: 10%;
+  width: 20%;
+  border: 2px solid lightgrey;
+}
+.centerForce {
+  height: 150px;
+  width: auto;
+}
+
+.style {
+  height: 325px !important;
+  width: 350px !important;
+  border-radius: 15px;
+  background-color: hsl(0, 8%, 93%);
+}
+.brand {
+  margin: 5px;
+  text-decoration: none;
+}
+.cartIncDec {
+  height: 27px;
+  width: 38px;
+  background: white;
+}
+.cartInput {
+  height: 28px;
+  width: 70px;
+  padding: 11px;
+}
+.productDetails {
+  /* width: 85%; */
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin: 22px 0px;
+  background: whitesmoke;
+  border-radius: 15px;
+}
+.query-section {
+  margin-top: 30px;
+  margin-left: 158px;
+}
+.query-design {
+  border: 2px solid lightgrey;
+  padding: 20px;
+  /* width: 40%; */
+  margin-left: 158px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background: whitesmoke;
+}
+.query-design:hover {
+  background-color: white;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.btnQuery {
+  height: 35px;
+  width: 100px;
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  background: #399713;
+  color: white;
+  margin-left: 50px;
+}
+.btnQuery:hover {
+  background: #225c0b;
+}
+.margin {
+  margin-left: 50px;
+}
+.extra-margin {
+  margin-left: 154px;
+}
+/* for Mobile view */
+@media only screen and (max-width: 770px) {
+  .main {
+    flex-direction: column;
+  }
+  .style {
+    margin: 5px;
+    padding: 2px;
+    height: 200px;
+    width: 220px;
+  }
+  .query-section {
+    margin-left: 5px;
+  }
+  .query-design {
+    margin-left: 5px;
+  }
+  .extra-margin {
+    margin-left: 5px;
+  }
+
+  .productDetails {
+    /* width: 238px; */
+    border: 1px solid lightgrey;
+    padding: 20px;
+    margin: 5px;
+    /* margin: 10px 22px; */
+    overflow: scroll;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .main {
+    flex-direction: row;
+    margin-top: 0px;
+  }
+  .style {
+    margin: 5px;
+    padding: 2px;
+    height: 200px;
+    width: 220px;
+  }
+}
+
+.style2 {
+  margin: auto;
+}
+
+.addCart {
+  height: 40px;
+  width: 120px;
+  color: white;
+  border-radius: 15px;
+  margin-left: 10px;
+  background-color: #357b5f;
+  border: none;
+}
+.addCart:hover {
+  background-color: #1b413c;
+}
+
+.backgroundColorSingle {
+  /* background: hsl(46, 8%, 40%); */
+  margin-top: 18px;
+}
+.titleSingle {
+  font-family: roboto;
+  color: maroon;
+}
+.priceSingle {
+  color: #1b413c;
+  font-family: roboto;
+  font-size: 20px;
+}

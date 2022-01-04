@@ -1,0 +1,31 @@
+.cart {
+  margin: 20px 3px;
+  overflow: hidden;
+}
+.cart img {
+  display: inline;
+  width: 50px;
+  height: 60px;
+  margin: 0 5px;
+}
+.cart h4 {
+  font-size: 20px;
+}
+.cart h4,
+h6 {
+  display: inline;
+}
+.cart button {
+  float: right;
+  margin-top: 25px;
+}
+.cart-btn {
+  cursor: pointer;
+}
+.buttonCartStyle {
+  margin-top: 2px;
+  background: #195155;
+  color: white;
+  height: 40px;
+  width: 65px;
+}
