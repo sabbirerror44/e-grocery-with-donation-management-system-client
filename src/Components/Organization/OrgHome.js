@@ -11,7 +11,7 @@ const OrgHome = () => {
 
     useEffect(()=>{
 
-        fetch(`http://localhost:5000/donation/delivered/${localStorage.getItem('orgName')}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/delivered/${localStorage.getItem('orgName')}`)
         .then((res) => res.json())
         .then((data) => {
             setDeliveredDonation(data.result);
@@ -21,7 +21,7 @@ const OrgHome = () => {
 
     const handleReceived = (id, mobileNo)=>{
 
-        fetch(`http://localhost:5000/donation/delivered/${id}`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/delivered/${id}`, {
             method: 'PUT',
         })
         .then((res) => res.json())

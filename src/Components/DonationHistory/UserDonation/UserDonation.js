@@ -6,7 +6,7 @@ const UserDonation = () => {
     const [donation, setDonation] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/donation/${localStorage.getItem('userMobile')}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/${localStorage.getItem('userMobile')}`)
             .then(res => res.json())
             .then((data) =>{
                 setDonation(data.result);

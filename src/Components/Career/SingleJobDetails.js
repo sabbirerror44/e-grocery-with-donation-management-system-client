@@ -6,7 +6,7 @@ const SingleJobDetails = () => {
     const [job, setJob] = useState({});
     const { id } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/job/${id}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/job/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setJob(res[0]);

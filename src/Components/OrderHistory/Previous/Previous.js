@@ -7,7 +7,7 @@ const Previous = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/order/delivered/${localStorage.getItem('userMobile')}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/order/delivered/${localStorage.getItem('userMobile')}`)
             .then(res => res.json())
             .then((data) =>{
                 setOrders(data);

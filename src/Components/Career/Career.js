@@ -5,7 +5,7 @@ import SingleJobPost from './SingleJobPost';
 const Career = () => {
     const [post, setPost] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/job')
+        fetch('https://powerful-sierra-34042.herokuapp.com/job')
             .then((res) => res.json())
             .then((res) => {
                 setPost(res);

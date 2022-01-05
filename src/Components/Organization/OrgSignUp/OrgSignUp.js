@@ -66,7 +66,7 @@ const handleChange = (e) => {
  const handleSubmit = (e) => {
      e.preventDefault();
 
-        fetch('http://localhost:5000/organization', {
+        fetch('https://powerful-sierra-34042.herokuapp.com/organization', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(organization),

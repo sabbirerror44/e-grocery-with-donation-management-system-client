@@ -20,7 +20,7 @@ const Checkout = () => {
         const newTotal = cartItems.reduce((total, item) => total + item.totalAmount, 0);
         setTotalPrice(newTotal);
 
-        fetch(`http://localhost:5000/organization`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/organization`)
         .then((res) => res.json())
         .then((data) => {
             setOrg(data.org);
@@ -241,7 +241,7 @@ const Checkout = () => {
                     paymentMethod: 'Cash On'
                 }
                 
-                fetch('http://localhost:5000/order/', {
+                fetch('https://powerful-sierra-34042.herokuapp.com/order/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(order),
@@ -259,7 +259,7 @@ const Checkout = () => {
                     paymentMethod: 'Cash On'
                 }
 
-                fetch('http://localhost:5000/donation/', {
+                fetch('https://powerful-sierra-34042.herokuapp.com/donation/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(donation),
@@ -277,13 +277,13 @@ const Checkout = () => {
 
          if( valid === true && count > 0 ){
 
-         window.open(`http://localhost:5000/payment/ssl-request/${order.price.totalPrice}`, '_blank');
+         window.open(`https://powerful-sierra-34042.herokuapp.com/payment/ssl-request/${order.price.totalPrice}`, '_blank');
 
          }
 
          else if (donation.donatedProducts.length > 0){
 
-            window.open(`http://localhost:5000/payment/ssl-request/${order.price.totalPrice}`, '_blank');
+            window.open(`https://powerful-sierra-34042.herokuapp.com/payment/ssl-request/${order.price.totalPrice}`, '_blank');
          
         }
        }
@@ -389,7 +389,7 @@ const Checkout = () => {
                             </div>
                             <div className="d-inline-block">
                             <img
-                                src={`http://localhost:5000/${item.image}`}
+                                src={`https://powerful-sierra-34042.herokuapp.com/${item.image}`}
                                 alt="product-img"
                             />
                             <h4>{item.title}</h4>

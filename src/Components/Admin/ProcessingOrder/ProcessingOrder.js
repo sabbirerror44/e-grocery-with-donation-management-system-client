@@ -5,7 +5,7 @@ import './ProcessingOrder.css';
 const ProcessingOrder = () => {
     const [pendingOrders, setPendingOrders] = useState([]);
     useEffect(() =>{
-        fetch(`http://localhost:5000/order/processing`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/order/processing`)
         .then((res) => res.json())
         .then((data) => {
             setPendingOrders(data);
@@ -13,7 +13,7 @@ const ProcessingOrder = () => {
     }, [])
 
     const handleClickDelivered = (id) =>{
-        fetch(`http://localhost:5000/order/processing/${id}`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/order/processing/${id}`, {
             method: 'PUT',
         })
         .then((res) => res.json())
@@ -25,7 +25,7 @@ const ProcessingOrder = () => {
         }
         
     const handleClickDelete = (id) =>{
-        fetch(`http://localhost:5000/order/processing/${id}`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/order/processing/${id}`, {
             method: 'DELETE',
         })
         .then((res) => res.json())

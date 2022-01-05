@@ -10,7 +10,7 @@ const Dashboard = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/order/allOrders`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/order/allOrders`)
         .then((res) => res.json())
         .then((data) => {
             if(data.length){
@@ -18,7 +18,7 @@ const Dashboard = () => {
             }
         });
 
-        fetch(`http://localhost:5000/donation/all`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/all`)
         .then((res) => res.json())
         .then((data) => {
             if(data.length){
@@ -26,7 +26,7 @@ const Dashboard = () => {
             }
         });
 
-        fetch(`http://localhost:5000/order/delivered`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/order/delivered`)
         .then(res => res.json())
         .then(data => {
             if(data.result.length){
@@ -34,7 +34,7 @@ const Dashboard = () => {
             }
         })
 
-        fetch(`http://localhost:5000/donation/delivered`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/delivered`)
         .then(res => res.json())
         .then(data => {
             if(data.result.length){

@@ -13,7 +13,7 @@ const JobApplyForm = () => {
         <iframe className="d-none" id="hidden-iframe"> </iframe>
       <form
         method="post"
-        action="http://localhost:5000/apply/"
+        action="https://powerful-sierra-34042.herokuapp.com/apply/"
         enctype="multipart/form-data"
         target="hidden-iframe" 
       >

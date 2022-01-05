@@ -6,7 +6,7 @@ import './AddJob.css';
 const AddJob = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/job/add`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/job/add`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data),

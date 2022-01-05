@@ -148,7 +148,7 @@ function Cart() {
                                 </div>
                                 <div className="d-inline-block">
                                 <img
-                                    src={`http://localhost:5000/${item.image}`}
+                                    src={`https://powerful-sierra-34042.herokuapp.com/${item.image}`}
                                     alt="product-img"
                                 />
                                 <h4>{item.title}</h4>

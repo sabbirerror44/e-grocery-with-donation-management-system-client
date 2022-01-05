@@ -7,7 +7,7 @@ const AddProduct = () => {
                <div className="form-design">
                <iframe className="d-none" id="hidden-iframe"> </iframe>
                     <form
-                        action="http://localhost:5000/product"
+                        action="https://powerful-sierra-34042.herokuapp.com/product"
                         method="post"
                         encType="multipart/form-data"
                         target="hidden-iframe"

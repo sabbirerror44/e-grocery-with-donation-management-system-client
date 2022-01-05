@@ -86,7 +86,7 @@ const handleChange = (e) => {
      if( storeOtp === userFilledOtp){
 
    
-        fetch('http://localhost:5000/user', {
+        fetch('https://powerful-sierra-34042.herokuapp.com/user', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user),

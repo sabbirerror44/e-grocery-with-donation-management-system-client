@@ -5,7 +5,7 @@ import './PendingDonation.css';
 const PendingDonation = () => {
     const [pendingDonations, setpendingDonations] = useState([]);
     useEffect(() =>{
-        fetch(`http://localhost:5000/donation/pending`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/pending`)
         .then((res) => res.json())
         .then((data) => {
             setpendingDonations(data);
@@ -13,7 +13,7 @@ const PendingDonation = () => {
     }, [pendingDonations])
 
     const handleClickDelivered = (id) =>{
-        fetch(`http://localhost:5000/donation/pending/${id}`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/pending/${id}`, {
             method: 'PUT',
         })
         .then((res) => res.json())
@@ -24,7 +24,7 @@ const PendingDonation = () => {
              })
         }
     const handleClickDelete = (id) =>{
-        fetch(`http://localhost:5000/donation/${id}`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/donation/${id}`, {
             method: 'DELETE',
         })
         .then((res) => res.json())

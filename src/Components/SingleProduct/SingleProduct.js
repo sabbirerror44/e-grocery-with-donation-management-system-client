@@ -72,13 +72,13 @@ const SingleProduct = () => {
     // const [quantity, setQuantity] = useState(0);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/single/${id}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/product/single/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setProduct(data[0]);
             });
 
-        fetch(`http://localhost:5000/query/${id}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/query/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setQuery(data);
@@ -125,7 +125,7 @@ const SingleProduct = () => {
         newQuery.username =  localStorage.getItem('userName');;
 
         if(newQuery.question){
-            fetch(`http://localhost:5000/query`, {
+            fetch(`https://powerful-sierra-34042.herokuapp.com/query`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newQuery),
@@ -145,7 +145,7 @@ const SingleProduct = () => {
                            <div className="text-center my-3">
                                 <img
                                         className="rounded centerForce"
-                                        src={`http://localhost:5000/${product.image}`}
+                                        src={`https://powerful-sierra-34042.herokuapp.com/${product.image}`}
                                         alt=""
                                     />
                         </div>

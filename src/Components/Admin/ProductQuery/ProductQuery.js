@@ -6,7 +6,7 @@ const ProductQuery = () => {
     const [answer, setAnswer] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:5000/query")
+        fetch("https://powerful-sierra-34042.herokuapp.com/query")
         .then((res) => res.json())
         .then((data) => {
             setQuery(data);
@@ -15,7 +15,7 @@ const ProductQuery = () => {
 
     const handleSubmitQuery = (id)=>{
         if(answer){
-        fetch(`http://localhost:5000/query/${id}`,{
+        fetch(`https://powerful-sierra-34042.herokuapp.com/query/${id}`,{
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({answer: answer}),

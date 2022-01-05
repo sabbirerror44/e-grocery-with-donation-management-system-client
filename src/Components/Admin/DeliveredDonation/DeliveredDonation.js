@@ -5,7 +5,7 @@ const DeliveredDonation = () => {
     const [deliveredDonations, setDeliveredDonations]= useState([]);
 
             useEffect(()=>{
-            fetch(`http://localhost:5000/donation/delivered`)
+            fetch(`https://powerful-sierra-34042.herokuapp.com/donation/delivered`)
                 .then(res => res.json())
                 .then(data => {
                     setDeliveredDonations(data);
@@ -13,7 +13,7 @@ const DeliveredDonation = () => {
             }, []);
 
             const handleClickDelete = (id) =>{
-                fetch(`http://localhost:5000/donation/${id}`, {
+                fetch(`https://powerful-sierra-34042.herokuapp.com/donation/${id}`, {
                     method: 'DELETE',
                 })
                 .then((res) => res.json())

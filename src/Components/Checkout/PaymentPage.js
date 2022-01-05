@@ -29,7 +29,7 @@ useEffect(() => {
 
         if ( orderObj.products.length > 0 ) {
 
-            fetch('http://localhost:5000/order/', {
+            fetch('https://powerful-sierra-34042.herokuapp.com/order/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(orderObj),
@@ -44,7 +44,7 @@ useEffect(() => {
 
         if (donation.donatedProducts.length > 0) {
 
-            fetch('http://localhost:5000/donation/', {
+            fetch('https://powerful-sierra-34042.herokuapp.com/donation/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(donation),

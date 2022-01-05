@@ -6,7 +6,7 @@ const [orgList, setOrgList] = useState([]);
 
 useEffect(() => {
 
-    fetch(`http://localhost:5000/organization/pending`)
+    fetch(`https://powerful-sierra-34042.herokuapp.com/organization/pending`)
     .then((res) => res.json())
     .then((data) => {
         setOrgList(data.org);
@@ -16,7 +16,7 @@ useEffect(() => {
 
 const handleAccept = (id, mobileNo) =>{
 
-    fetch(`http://localhost:5000/organization/${id}`, {
+    fetch(`https://powerful-sierra-34042.herokuapp.com/organization/${id}`, {
         method: 'PUT',
     })
     .then((res) => res.json())
@@ -38,7 +38,7 @@ const handleAccept = (id, mobileNo) =>{
 
 const handleReject = (id) => {
 
- fetch(`http://localhost:5000/organization/${id}`, {
+ fetch(`https://powerful-sierra-34042.herokuapp.com/organization/${id}`, {
             method: 'DELETE',
         })
         .then((res) => res.json())

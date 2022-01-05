@@ -25,7 +25,7 @@ const UpdateProduct = () => {
         stock: '',
     });
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${category}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/product/${category}`)
         .then((res) => res.json())
         .then((data) => {
             setProducts(data);
@@ -36,7 +36,7 @@ const UpdateProduct = () => {
         e.preventDefault();
         setShow(false);
         const updateObj = Object.fromEntries(Object.entries(updateData).filter(([_, v]) => v != ''));
-        fetch(`http://localhost:5000/product/update/${productId}`,{
+        fetch(`https://powerful-sierra-34042.herokuapp.com/product/update/${productId}`,{
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(updateObj),
@@ -87,7 +87,7 @@ const UpdateProduct = () => {
                      <div className="col-lg-4 col-md-6">
                         <div style={{height: '500px'}}  className="card">
                             <div className="card-img">
-                                    <img className="" src={`http://localhost:5000/${product.image}`} alt="" />
+                                    <img className="" src={`https://powerful-sierra-34042.herokuapp.com/${product.image}`} alt="" />
                             </div>
                             <Card.Body>
                                 <Card.Title>{product.title}</Card.Title>

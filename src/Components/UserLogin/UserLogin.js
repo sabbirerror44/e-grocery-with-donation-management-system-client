@@ -46,7 +46,7 @@ const UserLogin = () => {
         const handleSubmit = (e) => {
             console.log(user);
             e.preventDefault();
-            fetch('http://localhost:5000/user/login', {
+            fetch('https://powerful-sierra-34042.herokuapp.com/user/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(user),

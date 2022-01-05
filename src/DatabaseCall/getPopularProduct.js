@@ -7,7 +7,7 @@ const getPopularProduct = () => {
             function firstFetch(callback){
                 // var uniqueProduct = [];
              
-                fetch(`http://localhost:5000/order/all`)
+                fetch(`https://powerful-sierra-34042.herokuapp.com/order/all`)
                 .then(res => res.json())
                 .then((data) =>{
                     const productArray = data.map(item =>{
@@ -43,7 +43,7 @@ const getPopularProduct = () => {
             
             function lastFetch(uniqueProduct){
           
-                fetch(`http://localhost:5000/product/${undefined}`)
+                fetch(`https://powerful-sierra-34042.herokuapp.com/product/${undefined}`)
                 .then((res) => res.json())
                 .then((data) => {
                 

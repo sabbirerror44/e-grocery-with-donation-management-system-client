@@ -10,7 +10,7 @@ const CandidateList = () => {
     const [candidateList, setCandidateList] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/apply/candidate/${id}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/apply/candidate/${id}`)
         .then(res => res.json())
         .then(res => {
             setIsHitApi(true);

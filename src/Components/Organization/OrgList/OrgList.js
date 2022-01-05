@@ -7,7 +7,7 @@ const [orgList, setOrgList] = useState([]);
 
 useEffect(() => {
 
-    fetch(`http://localhost:5000/organization`)
+    fetch(`https://powerful-sierra-34042.herokuapp.com/organization`)
     .then((res) => res.json())
     .then((data) => {
         console.log(data);

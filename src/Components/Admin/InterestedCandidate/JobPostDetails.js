@@ -6,7 +6,7 @@ const JobPostDetails = (props) => {
 
     // delete single job post by admin
     const handleDeletePost = (id) => {
-        fetch(`http://localhost:5000/job/delete/${id}`,{
+        fetch(`https://powerful-sierra-34042.herokuapp.com/job/delete/${id}`,{
           method: 'DELETE',
           headers: {'Content-Type': 'application/json'}
       })

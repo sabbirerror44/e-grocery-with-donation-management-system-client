@@ -11,7 +11,7 @@ const Product = (props) => {
             <div className="card">
                 <div className="card-img">
                     <Link to={`/singleProduct/${product._id}`}>
-                        <img className="" src={`http://localhost:5000/${product.image}`} alt="" />
+                        <img className="" src={`https://powerful-sierra-34042.herokuapp.com/${product.image}`} alt="" />
                     </Link>
                 </div>
                 <Card.Body>

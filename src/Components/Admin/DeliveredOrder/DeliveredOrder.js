@@ -5,7 +5,7 @@ const DeliveredOrder = () => {
     const [deliveredOrders, setDeliveredOrders]= useState([]);
 
             useEffect(()=>{
-            fetch(`http://localhost:5000/order/delivered`)
+            fetch(`https://powerful-sierra-34042.herokuapp.com/order/delivered`)
                 .then(res => res.json())
                 .then(data => {
                     setDeliveredOrders(data);
@@ -13,7 +13,7 @@ const DeliveredOrder = () => {
             }, []);
 
             const handleClickDelete = (id) =>{
-                fetch(`http://localhost:5000/order/delivered/${id}`, {
+                fetch(`https://powerful-sierra-34042.herokuapp.com/order/delivered/${id}`, {
                     method: 'DELETE',
                 })
                 .then((res) => res.json())

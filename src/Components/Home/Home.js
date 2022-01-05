@@ -12,7 +12,7 @@ const Home = () => {
     const [category, setCategory] = useState();
     const [productList, setProductList] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${category}`)
+        fetch(`https://powerful-sierra-34042.herokuapp.com/product/${category}`)
             .then((res) => res.json())
             .then((data) => {
                 setProductList(data);

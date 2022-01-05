@@ -14,7 +14,7 @@ export default function SingleCandidateList(props) {
             <p>Phone: <span>{mobileNo}</span></p>
             <p>Address: <span>{address}</span></p>
             <p>Get To Know The Company: <span>{source}</span></p>
-            <p><a href={`http://localhost:5000/${resume}`} target="_blank" rel='noreferrer noopener'><FontAwesomeIcon className="pdf-icon" icon={faFilePdf} /></a></p>
+            <p><a href={`https://powerful-sierra-34042.herokuapp.com/${resume}`} target="_blank" rel='noreferrer noopener'><FontAwesomeIcon className="pdf-icon" icon={faFilePdf} /></a></p>
     </div>
     </div>
   );

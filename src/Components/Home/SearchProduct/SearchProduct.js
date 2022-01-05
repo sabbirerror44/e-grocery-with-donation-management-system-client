@@ -12,7 +12,7 @@ const SearchProduct = () => {
 
     if( e.target.value !== ''){
        
-        fetch(`http://localhost:5000/product/search`, {
+        fetch(`https://powerful-sierra-34042.herokuapp.com/product/search`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({productName: e.target.value}),
@@ -43,7 +43,7 @@ const SearchProduct = () => {
                         result.map(item => (
 
                   <>    
-                    <img className="small-product-img" src={`http://localhost:5000/${item.image}`} alt="product-img"/>
+                    <img className="small-product-img" src={`https://powerful-sierra-34042.herokuapp.com/${item.image}`} alt="product-img"/>
                     <NavLink style={{textDecoration: 'none', color: 'white'}} to={`/singleProduct/${item._id}`}>{item.title}
                     </NavLink>
                   <br />
